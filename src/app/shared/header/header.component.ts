@@ -1,0 +1,32 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
+})
+export class HeaderComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  open() {
+    const hamburger = document.querySelector('#ham');
+    const pageName = document.querySelector('#page-name');
+    const menu = document.querySelector('#menu');
+    menu.classList.toggle('menu-open');
+    pageName.classList.toggle('open');
+    hamburger.classList.toggle('open');
+  }
+
+  close() {
+    const hamburger = document.querySelector('#ham');
+    const pageName = document.querySelector('#page-name');
+    const menu = document.querySelector('#menu');
+    menu.classList.remove('menu-open');
+    pageName.classList.remove('open');
+    hamburger.classList.remove('open');
+  }
+}

@@ -1,0 +1,72 @@
+@import 'base/variables';
+
+#ham {
+  transition: .5s ease-in-out;
+  &:hover {
+    span {
+      background: $red;
+    }
+  }
+  span {
+    transition: .25s ease-in-out;
+    position: relative;
+
+  }
+}
+
+#page-name {
+  font-family: $raleway-bold;
+  transition: .25s ease-in-out;
+}
+
+.open {
+  color: $black;
+  &:hover {
+    color: $red;
+    span {
+      background: $red;
+    }
+  }
+  span {
+    background: $black;
+
+    &:nth-child(1) {
+      transform: rotate(45deg);
+      top: 0.8rem;
+      left: 0rem
+    }
+    &:nth-child(2) {
+      width: 0%;
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+      top: -1.2rem;
+      left: 0rem;
+    }
+  }
+}
+
+#menu {
+  bottom: 100%;
+  transition: bottom .5s ease-in-out;
+  padding-top: 4rem;
+  ul {
+    li {
+      a {
+        font-family: $raleway-bold;
+      }
+    }
+  }
+}
+
+.menu-open {
+  bottom: 0 !important;
+}
+
+#social {
+  position: relative;
+  bottom: 3rem;
+  right: 2px;
+}
+
