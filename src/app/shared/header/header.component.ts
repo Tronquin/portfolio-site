@@ -28,7 +28,9 @@ export class HeaderComponent implements OnInit {
     const pageName = document.querySelector('#page-name');
     const menu = document.querySelector('#menu');
     const body = document.querySelector('body');
-    body.classList.toggle('no-scroll');
+    if(menu.classList.contains('open')) {
+      body.classList.toggle('no-scroll');
+    }
     menu.classList.remove('menu-open');
     pageName.classList.remove('open');
     hamburger.classList.remove('open');
