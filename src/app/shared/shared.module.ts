@@ -7,7 +7,7 @@ import {
   FaConfig
 } from '@fortawesome/angular-fontawesome';
 import {
-  faBan, faLink
+  faBan, faChevronDown, faChevronUp
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -19,13 +19,14 @@ import {
 @NgModule({
   declarations: [HeaderComponent],
   imports: [FontAwesomeModule, RouterModule],
-  exports: [FontAwesomeModule, RouterModule, HeaderComponent]
+  exports: [FontAwesomeModule, RouterModule, HeaderComponent],
+  providers: []
 })
 export class SharedModule {
   constructor(library: FaIconLibrary, config: FaConfig) {
     config.fallbackIcon = faBan;
     library.addIcons(
-      faInstagram, faGithub, faLinkedin
+      faInstagram, faGithub, faLinkedin, faChevronDown, faChevronUp
     );
   }
 }
