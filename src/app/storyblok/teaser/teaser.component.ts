@@ -1,18 +1,15 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-teaser',
-  templateUrl: './teaser.component.html',
-  styleUrls: ['./teaser.component.scss']
+  selector: "app-teaser",
+  templateUrl: "./teaser.component.html",
+  styleUrls: ["./teaser.component.scss"]
 })
 export class TeaserComponent implements OnInit {
-
   @Input() headline: string;
   @Input() _editable: any;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
