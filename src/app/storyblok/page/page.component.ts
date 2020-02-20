@@ -12,7 +12,9 @@ export class PageComponent implements OnInit {
   @Input() body: any[];
   @Input() _editable: any;
 
-  constructor() {}
+  constructor() {
+    console.log('aqui');
+  }
 
   ngOnInit(): void {}
 }

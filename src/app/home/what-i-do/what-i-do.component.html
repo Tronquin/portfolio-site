@@ -1,0 +1,19 @@
+<section class="my-10">
+  <div class="flex items-end flex-col">
+    <h2 class="font-raleway-bold text-4xl mb-4 md:mb-0 md:text-5xl">
+      {{ headline }}
+    </h2>
+    <h6 class="font-raleway-thin text-2xl">
+      {{ description }}
+    </h6>
+  </div>
+  <div class="flex md:flex-col md:items-center w-full my-10 justify-between">
+    <div class="flex flex-col mx-4 md:my-6 justify-center items-center w-40" *ngFor="let feature of columns">
+    <img class="border-my-red bg-my-red border-8 rounded" src="{{feature.image}}" alt="{{ feature.title }}" />
+      <h6 class="font-raleway-bold text-xl my-3">{{feature.title}}</h6>
+      <p class="font-raleway-thin text-lg text-center">
+        {{feature.description}}
+      </p>
+    </div>
+  </div>
+</section>

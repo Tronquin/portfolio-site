@@ -1,6 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { Observable } from "rxjs";
 import { ScullyRoutesService } from "@scullyio/ng-lib";
+import { StoryBlokService } from '../storyblok/storyblok.service';
+import { Components } from 'src/app/components';
 
 @Component({
   selector: "app-home",
@@ -8,14 +10,23 @@ import { ScullyRoutesService } from "@scullyio/ng-lib";
   styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent implements OnInit {
-  links$: Observable<any> = this.scully.available$;
 
-  constructor(private scully: ScullyRoutesService) {}
+  story = { content: null, name: "" };
+  components = Components;
+
+  constructor(private storyblokService: StoryBlokService) {
+    window.storyblok.init();
+    window.storyblok.on(["change", "published"], function() {
+      location.reload(true);
+    });
+  }
 
   ngOnInit() {
-    // debug current pages
-    this.links$.subscribe(links => {
-      console.log(links);
-    });
+    this.storyblokService
+      .getStory("home", { version: "draft" })
+      .subscribe(data => {
+        console.log('home component', data.data.story);
+        this.story = data.data.story;
+      });
   }
 }
