@@ -7,13 +7,13 @@ import { Components } from "src/app/components";
   styleUrls: ["./page.component.scss"]
 })
 export class PageComponent implements OnInit {
-  components = Components;
+  components: any = import("src/app/components").then(cp => cp.Components);
 
-  @Input() body: any[];
+  @Input() body: any;
   @Input() _editable: any;
 
   constructor() {
-    console.log('aqui');
+    this.components.then(obj => {this.components = obj});
   }
 
   ngOnInit(): void {}

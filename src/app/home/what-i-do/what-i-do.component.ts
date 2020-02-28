@@ -14,7 +14,6 @@ export class WhatIDoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.columns);
   }
 
 }

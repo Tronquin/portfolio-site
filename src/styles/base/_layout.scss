@@ -21,3 +21,10 @@ section {
     height: unset;
   }
 }
+
+@include media('<phone') {
+  .wrapper {
+    max-width: 320px;
+  }
+}
+

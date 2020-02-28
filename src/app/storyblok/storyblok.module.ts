@@ -12,7 +12,7 @@ import { CommonModule } from "@angular/common";
     PageComponent,
     GridComponent,
   ],
-  imports: [DynamicModule.forRoot(), CommonModule],
+  imports: [DynamicModule, CommonModule],
   exports: [
     StoryblokDirective,
     PageComponent,

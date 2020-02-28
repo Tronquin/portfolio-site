@@ -8,6 +8,9 @@ import { SharedModule } from "./shared/shared.module";
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { environment } from "../environments/environment";
 import { StoryBlokModule } from "./storyblok/storyblok.module";
+import { DynamicModule } from 'ng-dynamic-component';
+import { PageComponent } from './storyblok/page/page.component';
+import { GridComponent } from './storyblok/grid/grid.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +19,7 @@ import { StoryBlokModule } from "./storyblok/storyblok.module";
     AppRoutingModule,
     ScullyLibModule,
     SharedModule,
+    DynamicModule.forRoot(),
     StoryBlokModule,
     ServiceWorkerModule.register("ngsw-worker.js", {
       enabled: environment.production

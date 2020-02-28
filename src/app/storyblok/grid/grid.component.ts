@@ -8,12 +8,14 @@ import { Components } from 'src/app/components';
 })
 export class GridComponent implements OnInit {
 
-  components = Components;
+  components: any = import("src/app/components").then(cp => cp.Components);
 
   @Input() columns: any[];
   @Input() _editable: any;
 
-  constructor() { }
+  constructor() {
+    this.components.then(obj => {this.components = obj});
+  }
 
   ngOnInit(): void {
   }
