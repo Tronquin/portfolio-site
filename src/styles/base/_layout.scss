@@ -8,16 +8,13 @@
   padding-left:  10px;
 }
 
-section {
-  height: 80vh;
-}
-
 .no-scroll {
   overflow: hidden;
 }
 
-@include media('<tablet'){
-  section {
-    height: unset;
+@include media('<phone') {
+  .wrapper {
+    max-width: 320px;
   }
 }
+
