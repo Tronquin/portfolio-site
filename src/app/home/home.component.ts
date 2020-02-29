@@ -23,7 +23,6 @@ export class HomeComponent implements OnInit {
     this.storyblokService
       .getStory("home", { version: "draft" })
       .subscribe(data => {
-        console.log(data.data.story);
         this.story = data.data.story;
       });
   }
