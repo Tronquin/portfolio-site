@@ -7,7 +7,8 @@ import { from, Observable } from "rxjs";
 })
 export class StoryBlokService {
   private sbClient = new Client({
-    accessToken: "tGJfV5v2KUknWNdP8LQR8Qtt"
+    accessToken: "tGJfV5v2KUknWNdP8LQR8Qtt",
+    https: true
   });
 
   constructor() {}
