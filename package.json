@@ -11,7 +11,7 @@
     "scully": "scully",
     "scully:serve": "scully serve",
     "prestart": "ngtw build",
-    "scully-build-prod": "ngtw build --purge && ng build --prod && npm run scully"
+    "scully-build-prod": "ngtw build --purge && ng build --prod && npm run scully -- --nw"
   },
   "private": true,
   "dependencies": {
