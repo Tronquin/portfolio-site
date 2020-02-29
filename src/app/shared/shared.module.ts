@@ -15,11 +15,12 @@ import {
   faGithub,
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [HeaderComponent],
+  declarations: [HeaderComponent, FooterComponent],
   imports: [FontAwesomeModule, RouterModule],
-  exports: [FontAwesomeModule, RouterModule, HeaderComponent],
+  exports: [FontAwesomeModule, RouterModule, HeaderComponent, FooterComponent],
   providers: []
 })
 export class SharedModule {
