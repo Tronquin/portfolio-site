@@ -1,0 +1,11 @@
+<section class="mt-32 md:mt-24">
+  <h3 class="w-full text-right md:text-center mb-10 font-raleway-bold text-4xl">MY SERVICES</h3>
+  <div class="flex md:flex-col justify-between md:items-center">
+      <div class="flex flex-col md:mb-12 justify-center items-center rounded text-my-black bg-my-red p-2 mx-5 w-64" *ngFor="let service of services">
+        <img class="w-20" src="{{service.icon}}" alt="{{service.headline}}">
+        <h6 class="font-raleway-bold my-2">{{service.headline}}</h6>
+        <p class="font-raleway-regular my-2 text-center text-sm">{{service.description}}</p>
+        <a class="font-raleway-bold" href="mailto:skorm88k@gmail.com">Hire Me!</a>
+      </div>
+  </div>
+</section>

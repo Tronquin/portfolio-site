@@ -1,0 +1,27 @@
+<section
+  class="flex md:flex-col mt-40 md:my-16 justify-between md:justify-center items-center"
+>
+  <div
+    class="mr-32 md:mr-0 md:text-center md:flex md:justify-center md:items-center md:flex-col"
+  >
+    <h1 class="font-raleway-bold text-4xl mb-4 md:mb-0 md:text-5xl">
+      {{ headline }}
+    </h1>
+    <img
+      class="hidden w-64 md:block border-my-red bg-my-red border-8 rounded my-8"
+      src="../../assets/png/lambda.png"
+      alt="lambda"
+    />
+    <h4 class="font-raleway-thin text-3xl md:text-4xl">
+      {{ description }}
+    </h4>
+  </div>
+  <div>
+    <img
+      class="md:hidden w-96 border-my-red border-8 rounded"
+      src="{{ image }}"
+      alt="clown"
+    />
+  </div>
+</section>
+

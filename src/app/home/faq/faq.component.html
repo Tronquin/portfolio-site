@@ -1,0 +1,9 @@
+<section class="my-32">
+  <h3 class="w-full text-right md:text-center mb-10 font-raleway-bold text-4xl">QUESTIONS YOU MAY HAVE</h3>
+  <div class="flex md:flex-col justify-between">
+      <div class="flex flex-col m-4" *ngFor="let question of questions">
+        <h6 class="font-raleway-bold">Q. {{question.headline}}</h6>
+        <p class="font-raleway-thin">{{question.description}}</p>
+      </div>
+  </div>
+</section>
