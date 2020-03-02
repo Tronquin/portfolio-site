@@ -1,1 +1,9 @@
-<p>about works!</p>
+<div>
+  <div *ngIf="story.content">
+    <ndc-dynamic
+      [ndcDynamicComponent]="components[story.content.component]"
+      [ndcDynamicInputs]="story.content"
+    >
+    </ndc-dynamic>
+  </div>
+</div>

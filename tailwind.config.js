@@ -94,7 +94,11 @@ module.exports = {
     fontFamily: {
       'raleway-regular': '"raleway-regular", Helvetica, Arial',
       'raleway-thin': '"raleway-thin", Helvetica, Arial',
-      'raleway-bold': '"raleway-bold", Helvetica, Arial'
+      'raleway-bold': '"raleway-bold", Helvetica, Arial',
+      'playfair-regular': '"playfair-regular", Helvetica, Arial',
+      'playfair-italic': '"playfair-italic", Helvetica, Arial',
+      'playfair-black': '"playfair-italic", Helvetica, Arial',
+      'playfair-black-italic': '"playfair-italic", Helvetica, Arial'
     },
     width: {
 

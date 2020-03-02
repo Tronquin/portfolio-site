@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-who-am-i',
@@ -7,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhoAmIComponent implements OnInit {
 
-  constructor() { }
+  @Input() first_name: string;
+  @Input() last_name: string;
+  @Input() catch: string;
+  @Input() brief: string;
+  @Input() biography_1: string;
+  @Input() biography_2: string;
+  @Input() front: any;
+  @Input() biography_image: any;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
