@@ -1,8 +1,8 @@
 {
-  "name": "portfolio-site",
-  "short_name": "portfolio-site",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Francisco Bejarano | Full-Stack Web Developer",
+  "short_name": "Francisco Bejarano",
+  "theme_color": "#ED2124",
+  "background_color": "#0D0D0D",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
