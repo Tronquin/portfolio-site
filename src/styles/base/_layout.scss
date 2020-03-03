@@ -4,17 +4,19 @@
   margin-right: auto;
   margin-left:  auto;
   max-width: 960px;
-  padding-right: 10px;
-  padding-left:  10px;
+  padding-right: 30px;
+  padding-left:  30px;
 }
 
 .no-scroll {
   overflow: hidden;
 }
 
-@include media('<phone') {
-  .wrapper {
-    max-width: 320px;
-  }
-}
+// @include media('<=phone') {
+//   .wrapper {
+//     max-width: 320px;
+//     padding-right: 15px;
+//     padding-left:  15px;
+//   }
+// }
 

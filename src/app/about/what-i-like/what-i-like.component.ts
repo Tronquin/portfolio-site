@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-what-i-like',
@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./what-i-like.component.scss']
 })
 export class WhatILikeComponent implements OnInit {
+
+  @Input() tribilin: any;
+  @Input() music: string;
+  @Input() cinema: string;
+  @Input() videogames: string;
+  @Input() image: any;
+
 
   constructor() { }
 

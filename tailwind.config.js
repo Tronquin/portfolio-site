@@ -62,7 +62,9 @@ module.exports = {
       colors: {
         'my-red': '#ED2124',
         'my-black': '#0D0D0D',
-        'my-white': '#F2F2F2'
+        'my-white': '#F2F2F2',
+        'my-yellow': '#E4A502',
+        'my-purple': '#6C1669'
       },
       width: {
         'screen': '100vw',
@@ -97,8 +99,8 @@ module.exports = {
       'raleway-bold': '"raleway-bold", Helvetica, Arial',
       'playfair-regular': '"playfair-regular", Helvetica, Arial',
       'playfair-italic': '"playfair-italic", Helvetica, Arial',
-      'playfair-black': '"playfair-italic", Helvetica, Arial',
-      'playfair-black-italic': '"playfair-italic", Helvetica, Arial'
+      'playfair-black': '"playfair-black", Helvetica, Arial',
+      'playfair-black-italic': '"playfair-black-italic", Helvetica, Arial'
     },
     width: {
 

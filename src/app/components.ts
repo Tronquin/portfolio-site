@@ -9,11 +9,15 @@ import { MySkillsComponent } from './home/my-skills/my-skills.component';
 import { MostRecentWorksComponent } from './home/most-recent-works/most-recent-works.component';
 import { MyServicesComponent } from './home/my-services/my-services.component';
 import { FaqComponent } from './home/faq/faq.component';
+import { WhatILikeComponent } from './about/what-i-like/what-i-like.component';
+import { ContactMeComponent } from './about/contact-me/contact-me.component';
 
 let Components = {
   'hello': HelloComponent,
   'what_I_do': WhatIDoComponent,
   'who_am_I': WhoAmIComponent,
+  'what_I_like': WhatILikeComponent,
+  'contact_me': ContactMeComponent,
   'my_skills': MySkillsComponent,
   'most_recent_works': MostRecentWorksComponent,
   'my_services': MyServicesComponent,
