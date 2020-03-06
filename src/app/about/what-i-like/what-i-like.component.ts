@@ -12,6 +12,7 @@ export class WhatILikeComponent implements OnInit {
   @Input() cinema: string;
   @Input() videogames: string;
   @Input() image: any;
+  @Input() like: any;
 
 
   constructor() { }

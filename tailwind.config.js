@@ -100,7 +100,9 @@ module.exports = {
       'playfair-regular': '"playfair-regular", Helvetica, Arial',
       'playfair-italic': '"playfair-italic", Helvetica, Arial',
       'playfair-black': '"playfair-black", Helvetica, Arial',
-      'playfair-black-italic': '"playfair-black-italic", Helvetica, Arial'
+      'playfair-black-italic': '"playfair-black-italic", Helvetica, Arial',
+      'playfair-bold': '"playfair-bold", Helvetica, Arial',
+      'playfair-bold-italic': '"playfair-bold-italic", Helvetica, Arial'
     },
     width: {
 

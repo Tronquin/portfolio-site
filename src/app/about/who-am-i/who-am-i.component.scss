@@ -1,13 +1,13 @@
 @import 'media/queries';
 
 #floating-catch {
-  bottom: -6.255rem;
-  right: 7rem;
+  bottom: -5.255rem;
+  right: 15.8rem;
 }
 
 @include media('<tablet') {
   #floating-catch {
-    bottom: -6.255rem;
-    right: 1rem;
+    bottom: unset;
+    right: unset;
   }
 }

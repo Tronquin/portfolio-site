@@ -3854,6 +3854,14 @@ video {
   font-family: "playfair-black-italic", Helvetica, Arial;
 }
 
+.font-playfair-bold {
+  font-family: "playfair-bold", Helvetica, Arial;
+}
+
+.font-playfair-bold-italic {
+  font-family: "playfair-bold-italic", Helvetica, Arial;
+}
+
 .font-hairline {
   font-weight: 100;
 }
@@ -18235,6 +18243,14 @@ video {
 
   .sm\:font-playfair-black-italic {
     font-family: "playfair-black-italic", Helvetica, Arial;
+  }
+
+  .sm\:font-playfair-bold {
+    font-family: "playfair-bold", Helvetica, Arial;
+  }
+
+  .sm\:font-playfair-bold-italic {
+    font-family: "playfair-bold-italic", Helvetica, Arial;
   }
 
   .sm\:font-hairline {
@@ -32621,6 +32637,14 @@ video {
     font-family: "playfair-black-italic", Helvetica, Arial;
   }
 
+  .md\:font-playfair-bold {
+    font-family: "playfair-bold", Helvetica, Arial;
+  }
+
+  .md\:font-playfair-bold-italic {
+    font-family: "playfair-bold-italic", Helvetica, Arial;
+  }
+
   .md\:font-hairline {
     font-weight: 100;
   }
@@ -47005,6 +47029,14 @@ video {
     font-family: "playfair-black-italic", Helvetica, Arial;
   }
 
+  .lg\:font-playfair-bold {
+    font-family: "playfair-bold", Helvetica, Arial;
+  }
+
+  .lg\:font-playfair-bold-italic {
+    font-family: "playfair-bold-italic", Helvetica, Arial;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -61387,6 +61419,14 @@ video {
 
   .xl\:font-playfair-black-italic {
     font-family: "playfair-black-italic", Helvetica, Arial;
+  }
+
+  .xl\:font-playfair-bold {
+    font-family: "playfair-bold", Helvetica, Arial;
+  }
+
+  .xl\:font-playfair-bold-italic {
+    font-family: "playfair-bold-italic", Helvetica, Arial;
   }
 
   .xl\:font-hairline {

@@ -23,7 +23,6 @@ export class AboutComponent implements OnInit {
     this.storyblokService
       .getStory("about", { version: "draft" })
       .subscribe(data => {
-        console.log(data.data.story);
         this.story = data.data.story;
       });
   }
