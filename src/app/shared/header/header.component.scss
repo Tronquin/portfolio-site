@@ -15,12 +15,12 @@
 }
 
 #page-name {
-  font-family: $raleway-bold;
+  font-family: $lato-bold;
   transition: .25s ease-in-out;
 }
 
 .open {
-  color: $black;
+  color: $white;
   &:hover {
     color: $red;
     span {
@@ -28,7 +28,7 @@
     }
   }
   span {
-    background: $black;
+    background: $white;
 
     &:nth-child(1) {
       transform: rotate(45deg);
@@ -54,7 +54,7 @@
   ul {
     li {
       a {
-        font-family: $raleway-bold;
+        font-family: $lato-bold;
       }
     }
   }

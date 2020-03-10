@@ -1,88 +1,53 @@
 @font-face {
-    font-family: 'raleway-bold';
-    src: url('~/assets/fonts/raleway/raleway-bold-webfont.woff2') format('woff2'),
-         url('~/assets/fonts/raleway/raleway-bold-webfont.woff') format('woff'),
-         url('~/assets/fonts/raleway/raleway-bold-webfont.ttf') format('ttf');
+    font-family: 'lato-bold';
+    src: url('~/assets/fonts/lato/lato-bold-webfont.woff2') format('woff2'),
+         url('~/assets/fonts/lato/lato-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'raleway-regular';
-    src: url('~/assets/fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
-         url('~/assets/fonts/raleway/raleway-regular-webfont.woff') format('woff'),
-         url('~/assets/fonts/raleway/raleway-regular-webfont.ttf') format('ttf');
+    font-family: 'lato-regular';
+    src: url('~/assets/fonts/lato/lato-regular-webfont.woff2') format('woff2'),
+         url('~/assets/fonts/lato/lato-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'raleway-thin';
-    src: url('~/assets/fonts/raleway/raleway-thin-webfont.woff2') format('woff2'),
-         url('~/assets/fonts/raleway/raleway-thin-webfont.woff') format('woff'),
-         url('~/assets/fonts/raleway/raleway-thin-webfont.ttf') format('ttf');
+    font-family: 'lato-light';
+    src: url('~/assets/fonts/lato/lato-light-webfont.woff2') format('woff2'),
+         url('~/assets/fonts/lato/lato-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+
 @font-face {
-  font-family: 'playfair-black-italic';
-  src: url('~/assets/fonts/playfair/playfairdisplay-blackitalic-webfont.woff2') format('woff2'),
-       url('~/assets/fonts/playfair/playfairdisplay-blackitalic-webfont.woff') format('woff'),
-       url('~/assets/fonts/playfair/playfairdisplay-blackitalic-webfont.otf') format('otf');
+  font-family: 'oswald-light';
+  src: url('~/assets/fonts/oswald/oswald-light-webfont.woff2') format('woff2'),
+       url('~/assets/fonts/oswald/oswald-light-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'playfair-italic';
-  src: url('~/assets/fonts/playfair/playfairdisplay-italic-webfont.woff2') format('woff2'),
-       url('~/assets/fonts/playfair/playfairdisplay-italic-webfont.woff') format('woff'),
-       url('~/assets/fonts/playfair/playfairdisplay-italic-webfont.otf') format('otf');
+  font-family: 'oswald-regular';
+  src: url('~/assets/fonts/oswald/oswald-regular-webfont.woff2') format('woff2'),
+       url('~/assets/fonts/oswald/oswald-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'playfair-regular';
-  src: url('~/assets/fonts/playfair/playfairdisplay-regular-webfont.woff2') format('woff2'),
-       url('~/assets/fonts/playfair/playfairdisplay-regular-webfont.woff') format('woff'),
-       url('~/assets/fonts/playfair/playfairdisplay-regular-webfont.otf') format('otf');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'playfair-black';
-  src: url('~/assets/fonts/playfair/playfairdisplay-black-webfont.woff2') format('woff2'),
-       url('~/assets/fonts/playfair/playfairdisplay-black-webfont.woff') format('woff'),
-       url('~/assets/fonts/playfair/playfairdisplay-black-webfont.otf') format('otf');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'playfair-bold';
-  src: url('~/assets/fonts/playfair/playfairdisplay-bold-webfont.woff2') format('woff2'),
-       url('~/assets/fonts/playfair/playfairdisplay-bold-webfont.woff') format('woff'),
-       url('~/assets/fonts/playfair/playfairdisplay-bold-webfont.otf') format('otf');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'playfair-bold-italic';
-  src: url('~/assets/fonts/playfair/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
-       url('~/assets/fonts/playfair/playfairdisplay-bolditalic-webfont.woff') format('woff'),
-       url('~/assets/fonts/playfair/playfairdisplay-bolditalic-webfont.otf') format('otf');
+  font-family: 'oswald-bold';
+  src: url('~/assets/fonts/oswald/oswald-bold-webfont.woff2') format('woff2'),
+       url('~/assets/fonts/oswald/oswald-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

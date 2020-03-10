@@ -1,18 +1,20 @@
 <section class=" mt-40 md:my-24">
   <div class="w-full flex justify-center items-center mb-32 md:mb-16">
     <img class="md:hidden" src="../../../assets/svg/book.svg" alt="book">
-    <hr class="mx-16 border-my-red rotate-90 h-40 md:hidden" style="border-width: 0.5px;">
-    <h3 class="font-raleway-bold text-4xl md:text-5xl md:text-my-red">MOST RECENT <br> WORKS</h3>
+    <hr class="mx-16 border-my-white rotate-90 h-40 md:hidden" style="border-width: 0.5px;">
+    <h3 class="font-oswald-bold text-6xl md:text-6xl">MOST RECENT <br> WORKS</h3>
   </div>
-  <div class="flex justify-between md:justify-center my-16" *ngFor="let project of projects">
-    <img class="w-64 object-cover md:hidden rounded" src="{{project.image}}" alt="project.title">
-    <div class="flex flex-col w-84">
-      <h6 class="font-raleway-bold text-2xl md:text-4xl">{{project.headline}}</h6>
-      <p class="font-raleway-thin my-2 text-xl md:text-2xl">{{project.description}}</p>
-      <ul *ngFor="let bulletpoint of project.bulletpoints">
-        <li class="flex my-4 items-center">
-          <img class="md:w-10" src="{{bulletpoint.icon}}" alt="{{bulletpoint.title}}">
-          <p class="font-raleway-bold ml-8 text-xl md:text-2xl">{{bulletpoint.title}}</p>
+  <div class="flex justify-between md:justify-center my-24" *ngFor="let project of projects">
+    <div class="flex md:flex-col justify-between">
+      <div class="flex flex-col w-96 md:w-full md:mb-12">
+        <h6 class="font-oswald-regular text-3xl md:text-4xl md:text-center">{{project.headline}}</h6>
+        <p class="font-lato-light my-2 md:text-2xl md:text-center">{{project.description}}</p>
+      </div>
+      <hr class="mx-16 border-my-white rotate-90 h-full md:hidden" style="border-width: 0.5px;">
+      <ul class="flex flex-col justify-between md:items-center">
+        <li class="flex items-center md:mb-8" *ngFor="let bulletpoint of project.bulletpoints">
+          <p class="font-oswald-regular whitespace-no-wrap md:text-2xl">{{bulletpoint.title}}</p>
+          <img class="ml-6 w-6 md:w-10" src="{{bulletpoint.icon}}" alt="{{bulletpoint.title}}">
         </li>
       </ul>
     </div>

@@ -1,9 +1,13 @@
 <section class="my-32">
-  <h3 class="w-full text-right md:text-center mb-10 font-raleway-bold text-4xl md:text-5xl">QUESTIONS YOU MAY HAVE</h3>
+    <div class="w-full flex justify-center items-center mb-32 md:mb-16">
+        <h3 class="font-oswald-bold text-5xl md:text-6xl md:text-center">QUESTIONS YOU MAY HAVE</h3>
+        <hr class="mx-16 border-my-white rotate-90 h-40 md:hidden" style="border-width: 0.5px;">
+        <h3 class="md:hidden font-oswald-bold text-6xl text-my-red rotate-45">¿?</h3>
+      </div>
   <div class="flex md:flex-col justify-between">
-      <div class="flex flex-col m-4" *ngFor="let question of questions">
-        <h6 class="font-raleway-bold text-lg md:text-3xl">Q. {{question.headline}}</h6>
-        <p class="font-raleway-thin text-lg md:text-2xl">{{question.description}}</p>
+      <div class="flex flex-col mx-8 md:my-8" *ngFor="let question of questions">
+        <h6 class="font-oswald-regular text-lg md:text-3xl">Q. {{question.headline}}</h6>
+        <p class="font-lato-light text-lg md:text-2xl">{{question.description}}</p>
       </div>
   </div>
 </section>

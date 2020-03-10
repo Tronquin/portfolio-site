@@ -63,8 +63,6 @@ module.exports = {
         'my-red': '#ED2124',
         'my-black': '#0D0D0D',
         'my-white': '#F2F2F2',
-        'my-yellow': '#E4A502',
-        'my-purple': '#6C1669'
       },
       width: {
         'screen': '100vw',
@@ -94,15 +92,12 @@ module.exports = {
       }
     },
     fontFamily: {
-      'raleway-regular': '"raleway-regular", Helvetica, Arial',
-      'raleway-thin': '"raleway-thin", Helvetica, Arial',
-      'raleway-bold': '"raleway-bold", Helvetica, Arial',
-      'playfair-regular': '"playfair-regular", Helvetica, Arial',
-      'playfair-italic': '"playfair-italic", Helvetica, Arial',
-      'playfair-black': '"playfair-black", Helvetica, Arial',
-      'playfair-black-italic': '"playfair-black-italic", Helvetica, Arial',
-      'playfair-bold': '"playfair-bold", Helvetica, Arial',
-      'playfair-bold-italic': '"playfair-bold-italic", Helvetica, Arial'
+      'lato-regular': '"lato-regular", Helvetica, Arial',
+      'lato-light': '"lato-light", Helvetica, Arial',
+      'lato-bold': '"lato-bold", Helvetica, Arial',
+      'oswald-regular': '"oswald-regular", Helvetica, Arial',
+      'oswald-light': '"oswald-light", Helvetica, Arial',
+      'oswald-bold': '"oswald-bold", Helvetica, Arial',
     },
     width: {
 

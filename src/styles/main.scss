@@ -5,8 +5,9 @@
 @import './media/queries';
 
 html, body {
-    font-family: $raleway;
+    font-family: $lato;
     font-size: min(max(#{$small}, 2.2vw), #{$regular});
+    line-height: 1.5;
     background-color: $black;
     color: $white;
 }

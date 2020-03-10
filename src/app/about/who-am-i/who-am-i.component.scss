@@ -1,13 +1,2 @@
-@import 'media/queries';
 
-#floating-catch {
-  bottom: -5.255rem;
-  right: 15.8rem;
-}
 
-@include media('<tablet') {
-  #floating-catch {
-    bottom: unset;
-    right: unset;
-  }
-}
