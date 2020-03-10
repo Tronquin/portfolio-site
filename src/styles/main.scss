@@ -4,3 +4,9 @@
 @import "./base/layout";
 @import "./base/typography";
 @import "./media/queries";
+
+body,
+html {
+  color: $white;
+  background-color: $black;
+}
