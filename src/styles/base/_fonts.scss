@@ -1,54 +1,55 @@
-@font-face {
-    font-family: 'lato-bold';
-    src: url('~/assets/fonts/lato/lato-bold-webfont.woff2') format('woff2'),
-         url('~/assets/fonts/lato/lato-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@300;400;700&display=swap");
 
-@font-face {
-    font-family: 'lato-regular';
-    src: url('~/assets/fonts/lato/lato-regular-webfont.woff2') format('woff2'),
-         url('~/assets/fonts/lato/lato-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+// @font-face {
+//     font-family: 'lato-bold';
+//     src: url('~/assets/fonts/lato/lato-bold-webfont.woff2') format('woff2'),
+//          url('~/assets/fonts/lato/lato-bold-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
-@font-face {
-    font-family: 'lato-light';
-    src: url('~/assets/fonts/lato/lato-light-webfont.woff2') format('woff2'),
-         url('~/assets/fonts/lato/lato-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+// @font-face {
+//     font-family: 'lato-regular';
+//     src: url('~/assets/fonts/lato/lato-regular-webfont.woff2') format('woff2'),
+//          url('~/assets/fonts/lato/lato-regular-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
+// @font-face {
+//     font-family: 'lato-light';
+//     src: url('~/assets/fonts/lato/lato-light-webfont.woff2') format('woff2'),
+//          url('~/assets/fonts/lato/lato-light-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
-@font-face {
-  font-family: 'oswald-light';
-  src: url('~/assets/fonts/oswald/oswald-light-webfont.woff2') format('woff2'),
-       url('~/assets/fonts/oswald/oswald-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'oswald-light';
+//   src: url('~/assets/fonts/oswald/oswald-light-webfont.woff2') format('woff2'),
+//        url('~/assets/fonts/oswald/oswald-light-webfont.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
 
-@font-face {
-  font-family: 'oswald-regular';
-  src: url('~/assets/fonts/oswald/oswald-regular-webfont.woff2') format('woff2'),
-       url('~/assets/fonts/oswald/oswald-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'oswald-regular';
+//   src: url('~/assets/fonts/oswald/oswald-regular-webfont.woff2') format('woff2'),
+//        url('~/assets/fonts/oswald/oswald-regular-webfont.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
 
-@font-face {
-  font-family: 'oswald-bold';
-  src: url('~/assets/fonts/oswald/oswald-bold-webfont.woff2') format('woff2'),
-       url('~/assets/fonts/oswald/oswald-bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'oswald-bold';
+//   src: url('~/assets/fonts/oswald/oswald-bold-webfont.woff2') format('woff2'),
+//        url('~/assets/fonts/oswald/oswald-bold-webfont.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }

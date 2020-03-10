@@ -1,19 +1,37 @@
 <section class="mt-40 md:mt-16">
-  <a class="cursor-pointer" [routerLink]="[ '/about']">
+  <a class="cursor-pointer" [routerLink]="['/about']">
     <div class="flex md:flex-col justify-between items-center">
-        <div class="w-48 md:w-64  md:mb-16 text-center flex flex-col justify-center items-center">
-          <img class="border-my-red bg-my-red border-8 rounded w-40 md:w-96 p-2" src="{{portrait}}" alt="cat">
-          <h3 class="font-oswald-bold mt-4 text-2xl md:text-4xl hover:text-my-red">{{headline}}</h3>
-          <p class="font-lato-light text-sm md:text-2xl my-2">{{description}}</p>
+      <div
+        class="w-48 md:w-64  md:mb-16 text-center flex flex-col justify-center items-center"
+      >
+        <img
+          class="border-my-red bg-my-red border-8 rounded w-40 md:w-96 p-2"
+          src="{{ portrait }}"
+          alt="cat"
+        />
+        <h3
+          class="font-oswald font-bold mt-4 text-2xl md:text-4xl hover:text-my-red"
+        >
+          {{ headline }}
+        </h3>
+        <p class="font-lato font-light text-sm md:text-2xl my-2">
+          {{ description }}
+        </p>
+      </div>
+      <div>
+        <div class="flex justify-between mb-4">
+          <h5 class="font-oswald font-regular text-xl md:text-2xl">
+            My Skills
+          </h5>
+          <h6 class="font-lato font-light md:text-xl">Self-Appointed*</h6>
         </div>
-        <div>
-          <div class="flex justify-between mb-4">
-            <h5 class="font-oswald-regular text-xl md:text-2xl">My Skills</h5>
-            <h6 class="font-lato-light md:text-xl">Self-Appointed*</h6>
-          </div>
-          <img class="w-96 md:hidden" src="{{chart}}" alt="skill chart">
-          <img class="w-96 md:w-72 hidden md:block" src="{{chart_mobile}}" alt="skill chart mobile">
-        </div>
+        <img class="w-96 md:hidden" src="{{ chart }}" alt="skill chart" />
+        <img
+          class="w-96 md:w-72 hidden md:block"
+          src="{{ chart_mobile }}"
+          alt="skill chart mobile"
+        />
+      </div>
     </div>
   </a>
 </section>

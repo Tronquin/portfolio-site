@@ -1,13 +1,6 @@
-@import './base/fonts';
-@import './base/reset';
-@import './base/variables';
-@import './base/layout';
-@import './media/queries';
-
-html, body {
-    font-family: $lato;
-    font-size: min(max(#{$small}, 2.2vw), #{$regular});
-    line-height: 1.5;
-    background-color: $black;
-    color: $white;
-}
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/layout";
+@import "./base/typography";
+@import "./media/queries";

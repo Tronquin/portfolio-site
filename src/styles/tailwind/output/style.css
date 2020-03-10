@@ -3778,28 +3778,12 @@ video {
   clear: both;
 }
 
-.font-lato-regular {
-  font-family: "lato-regular", Helvetica, Arial;
+.font-lato {
+  font-family: "Lato", sans-serif;
 }
 
-.font-lato-light {
-  font-family: "lato-light", Helvetica, Arial;
-}
-
-.font-lato-bold {
-  font-family: "lato-bold", Helvetica, Arial;
-}
-
-.font-oswald-regular {
-  font-family: "oswald-regular", Helvetica, Arial;
-}
-
-.font-oswald-light {
-  font-family: "oswald-light", Helvetica, Arial;
-}
-
-.font-oswald-bold {
-  font-family: "oswald-bold", Helvetica, Arial;
+.font-oswald {
+  font-family: "Oswald", sans-serif;
 }
 
 .font-hairline {
@@ -18021,28 +18005,12 @@ video {
     clear: both;
   }
 
-  .sm\:font-lato-regular {
-    font-family: "lato-regular", Helvetica, Arial;
+  .sm\:font-lato {
+    font-family: "Lato", sans-serif;
   }
 
-  .sm\:font-lato-light {
-    font-family: "lato-light", Helvetica, Arial;
-  }
-
-  .sm\:font-lato-bold {
-    font-family: "lato-bold", Helvetica, Arial;
-  }
-
-  .sm\:font-oswald-regular {
-    font-family: "oswald-regular", Helvetica, Arial;
-  }
-
-  .sm\:font-oswald-light {
-    font-family: "oswald-light", Helvetica, Arial;
-  }
-
-  .sm\:font-oswald-bold {
-    font-family: "oswald-bold", Helvetica, Arial;
+  .sm\:font-oswald {
+    font-family: "Oswald", sans-serif;
   }
 
   .sm\:font-hairline {
@@ -32265,28 +32233,12 @@ video {
     clear: both;
   }
 
-  .md\:font-lato-regular {
-    font-family: "lato-regular", Helvetica, Arial;
+  .md\:font-lato {
+    font-family: "Lato", sans-serif;
   }
 
-  .md\:font-lato-light {
-    font-family: "lato-light", Helvetica, Arial;
-  }
-
-  .md\:font-lato-bold {
-    font-family: "lato-bold", Helvetica, Arial;
-  }
-
-  .md\:font-oswald-regular {
-    font-family: "oswald-regular", Helvetica, Arial;
-  }
-
-  .md\:font-oswald-light {
-    font-family: "oswald-light", Helvetica, Arial;
-  }
-
-  .md\:font-oswald-bold {
-    font-family: "oswald-bold", Helvetica, Arial;
+  .md\:font-oswald {
+    font-family: "Oswald", sans-serif;
   }
 
   .md\:font-hairline {
@@ -46509,28 +46461,12 @@ video {
     clear: both;
   }
 
-  .lg\:font-lato-regular {
-    font-family: "lato-regular", Helvetica, Arial;
+  .lg\:font-lato {
+    font-family: "Lato", sans-serif;
   }
 
-  .lg\:font-lato-light {
-    font-family: "lato-light", Helvetica, Arial;
-  }
-
-  .lg\:font-lato-bold {
-    font-family: "lato-bold", Helvetica, Arial;
-  }
-
-  .lg\:font-oswald-regular {
-    font-family: "oswald-regular", Helvetica, Arial;
-  }
-
-  .lg\:font-oswald-light {
-    font-family: "oswald-light", Helvetica, Arial;
-  }
-
-  .lg\:font-oswald-bold {
-    font-family: "oswald-bold", Helvetica, Arial;
+  .lg\:font-oswald {
+    font-family: "Oswald", sans-serif;
   }
 
   .lg\:font-hairline {
@@ -60753,28 +60689,12 @@ video {
     clear: both;
   }
 
-  .xl\:font-lato-regular {
-    font-family: "lato-regular", Helvetica, Arial;
+  .xl\:font-lato {
+    font-family: "Lato", sans-serif;
   }
 
-  .xl\:font-lato-light {
-    font-family: "lato-light", Helvetica, Arial;
-  }
-
-  .xl\:font-lato-bold {
-    font-family: "lato-bold", Helvetica, Arial;
-  }
-
-  .xl\:font-oswald-regular {
-    font-family: "oswald-regular", Helvetica, Arial;
-  }
-
-  .xl\:font-oswald-light {
-    font-family: "oswald-light", Helvetica, Arial;
-  }
-
-  .xl\:font-oswald-bold {
-    font-family: "oswald-bold", Helvetica, Arial;
+  .xl\:font-oswald {
+    font-family: "Oswald", sans-serif;
   }
 
   .xl\:font-hairline {

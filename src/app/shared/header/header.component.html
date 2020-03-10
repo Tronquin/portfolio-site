@@ -1,5 +1,14 @@
-<header class="relative z-50 flex justify-between items-center my-4 md:my-8 wrapper">
-  <h1 [routerLink]="['']" class="font-lato-bold z-10 cursor-pointer outline-none text-2xl sm:text-3xl text-my-white hover:text-my-red" id="page-name" (click)="close()">Tronquin.com</h1>
+<header
+  class="relative z-50 flex justify-between items-center my-4 md:my-8 wrapper"
+>
+  <h1
+    [routerLink]="['']"
+    class="font-lato font-bold z-10 cursor-pointer outline-none text-2xl sm:text-3xl text-my-white hover:text-my-red"
+    id="page-name"
+    (click)="close()"
+  >
+    Tronquin.com
+  </h1>
   <nav>
     <div class="cursor-pointer" id="ham" (click)="open()">
       <span class="w-10 h-1 bg-white mb-3 block rounded z-10"></span>
@@ -11,33 +20,65 @@
 <div class="z-20 bg-my-black fixed w-full h-full" id="menu">
   <ul class="flex justify-center flex-col items-center h-full">
     <li class="mb-6">
-      <a [routerLink]="['/projects']" class="font-lato-bold text-4xl capitalize text-my-white hover:text-my-red hidden" (click)="close()">WORK</a>
+      <a
+        [routerLink]="['/projects']"
+        class="font-lato font-bold text-4xl capitalize text-my-white hover:text-my-red hidden"
+        (click)="close()"
+        >WORK</a
+      >
     </li>
     <li class="mb-6">
-      <a [routerLink]="['/about']" class="font-lato-bold text-4xl capitalize text-my-white hover:text-my-red" (click)="close()">ABOUT</a>
+      <a
+        [routerLink]="['/about']"
+        class="font-lato font-bold text-4xl capitalize text-my-white hover:text-my-red"
+        (click)="close()"
+        >ABOUT</a
+      >
     </li>
     <li class="mb-6">
-      <a [routerLink]="['/blog']" class="font-lato-bold text-4xl capitalize text-my-white hover:text-my-red hidden" (click)="close()">BLOG</a>
+      <a
+        [routerLink]="['/blog']"
+        class="font-lato font-bold text-4xl capitalize text-my-white hover:text-my-red hidden"
+        (click)="close()"
+        >BLOG</a
+      >
     </li>
     <li class="mb-6">
-      <a href="mailto:skorm88k@gmail.com" class="font-lato-bold text-4xl capitalize text-my-white hover:text-my-red" (click)="close()">CONTACT</a>
+      <a
+        href="mailto:skorm88k@gmail.com"
+        class="font-lato font-bold text-4xl capitalize text-my-white hover:text-my-red"
+        (click)="close()"
+        >CONTACT</a
+      >
     </li>
   </ul>
   <div class="relative" style="bottom: 3rem">
     <ul class="flex justify-center items- h-4">
       <li class="mx-3">
         <a href="https://github.com/Tronquin">
-          <fa-icon size="lg" class="cursor-pointer text-my-white hover:text-my-red" [icon]="['fab', 'github']"></fa-icon>
+          <fa-icon
+            size="lg"
+            class="cursor-pointer text-my-white hover:text-my-red"
+            [icon]="['fab', 'github']"
+          ></fa-icon>
         </a>
       </li>
       <li class="mx-3">
         <a href="https://www.linkedin.com/in/tronquin/">
-          <fa-icon size="lg" class="cursor-pointer text-my-white hover:text-my-red" [icon]="['fab', 'linkedin']"></fa-icon>
+          <fa-icon
+            size="lg"
+            class="cursor-pointer text-my-white hover:text-my-red"
+            [icon]="['fab', 'linkedin']"
+          ></fa-icon>
         </a>
       </li>
       <li class="mx-3">
         <a href="https://www.instagram.com/tronquinwastaken/">
-          <fa-icon size="lg" class="cursor-pointer text-my-white hover:text-my-red" [icon]="['fab', 'instagram']"></fa-icon>
+          <fa-icon
+            size="lg"
+            class="cursor-pointer text-my-white hover:text-my-red"
+            [icon]="['fab', 'instagram']"
+          ></fa-icon>
         </a>
       </li>
     </ul>

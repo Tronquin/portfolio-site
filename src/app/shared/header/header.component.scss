@@ -1,22 +1,21 @@
-@import 'base/variables';
+@import "base/variables";
 
 #ham {
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   &:hover {
     span {
       background: $red;
     }
   }
   span {
-    transition: .25s ease-in-out;
+    transition: 0.25s ease-in-out;
     position: relative;
-
   }
 }
 
 #page-name {
-  font-family: $lato-bold;
-  transition: .25s ease-in-out;
+  font-family: $lato;
+  transition: 0.25s ease-in-out;
 }
 
 .open {
@@ -33,7 +32,7 @@
     &:nth-child(1) {
       transform: rotate(45deg);
       top: 0.8rem;
-      left: 0rem
+      left: 0rem;
     }
     &:nth-child(2) {
       width: 0%;
@@ -49,12 +48,12 @@
 
 #menu {
   bottom: 100%;
-  transition: bottom .5s ease-in-out;
+  transition: bottom 0.5s ease-in-out;
   padding-top: 4rem;
   ul {
     li {
       a {
-        font-family: $lato-bold;
+        font-family: $lato;
       }
     }
   }

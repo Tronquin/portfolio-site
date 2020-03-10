@@ -92,12 +92,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      'lato-regular': '"lato-regular", Helvetica, Arial',
-      'lato-light': '"lato-light", Helvetica, Arial',
-      'lato-bold': '"lato-bold", Helvetica, Arial',
-      'oswald-regular': '"oswald-regular", Helvetica, Arial',
-      'oswald-light': '"oswald-light", Helvetica, Arial',
-      'oswald-bold': '"oswald-bold", Helvetica, Arial',
+      'lato': '"Lato", sans-serif',
+      'oswald': '"Oswald", sans-serif',
     },
     width: {
 
