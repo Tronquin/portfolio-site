@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import fitty from 'fitty'
 
 @Component({
   selector: 'app-who-am-i',
@@ -21,8 +20,6 @@ export class WhoAmIComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    fitty('#first');
-    fitty('#last');
   }
 
 }

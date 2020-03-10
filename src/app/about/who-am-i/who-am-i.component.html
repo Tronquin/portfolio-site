@@ -1,22 +1,16 @@
 <section class="mt-16">
+  <div class="flex md:flex-col md:items-center justify-center">
+    <h1 class="font-oswald-bold uppercase text-6xl">{{first_name}}</h1>
+    <h2 class="font-oswald-regular uppercase text-6xl">{{last_name}}</h2>
+  </div>
+  <div class="flex md:flex-col items-center justify-center">
+    <h4 class="font-oswald-light text-center text-xl mr-1 uppercase">{{first_name}} {{last_name}} / {{first_name}} {{last_name}}</h4>
+    <h4 class="font-oswald-light text-center text-xl mr-1 uppercase">{{first_name}} {{last_name}} / {{first_name}} {{last_name}}</h4>
+    <h4 class="font-oswald-light text-center text-xl uppercase">{{first_name}} {{last_name}} / {{first_name}} {{last_name}}</h4>
+  </div>
   <div>
-      <div id="first">
-          <h1 class="font-oswald-bold uppercase h-0">{{first_name}}</h1>
-      </div>
-      <div class="flex md:flex-col justify-between items-center">
-        <div class="w-84 md:w-96">
-            <h2 id="last" class="font-oswald-regular uppercase h-0">{{last_name}}</h2>
-        </div>
-        <div class="md:hidden flex flex-col items-center justify-center relative" style="top: 15px;">
-          <h4 class="font-oswald-light text-xl mb-1 uppercase">{{first_name}} {{last_name}} / {{first_name}} {{last_name}}</h4>
-          <h4 class="font-oswald-light text-xl mb-1 uppercase">{{first_name}} {{last_name}} / {{first_name}} {{last_name}}</h4>
-          <h4 class="font-oswald-light text-xl mb-1 uppercase">{{first_name}} {{last_name}} / {{first_name}} {{last_name}}</h4>
-        </div>
-      </div>
-      <div>
-      <img class="my-6 md:my-8" src="{{front}}" alt="{{front.title}}">
-      <h5 class="font-oswald-light text-lg md:text-2xl tracking-widest text-center">{{catch}}</h5>
-      </div>
+    <img class="my-6 md:my-8" src="{{front}}" alt="{{front.title}}">
+    <h5 class="font-oswald-light text-lg md:text-2xl tracking-widest text-center">{{catch}}</h5>
   </div>
   <div class="my-12 md:my-20">
     <h2 class="font-oswald-light text-4xl md:text-5xl mb-4 md:mb-0 md:text-center">{{brief}}</h2>
