@@ -14821,30 +14821,6 @@ video {
           transition-duration: 1000ms;
 }
 
-.large {
-  font-size: var(--size-l-1);
-}
-
-.larger {
-  font-size: var(--size-l-2);
-}
-
-.largest {
-  font-size: var(--size-l-3);
-}
-
-small, .small {
-  font-size: var(--size-s-1);
-}
-
-.smaller {
-  font-size: var(--size-s-2);
-}
-
-.smallest {
-  font-size: var(--size-s-3);
-}
-
 @media (max-width: 479px) {
   .sm\:sr-only {
     position: absolute;
