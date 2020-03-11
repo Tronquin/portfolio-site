@@ -1,33 +1,33 @@
 <section class="mt-16">
   <div class="flex md:flex-col md:items-center justify-center">
-    <h1 class="font-oswald font-bold uppercase text-6xl">{{ first_name }}</h1>
-    <h2 class="font-oswald font-regular uppercase text-6xl">{{ last_name }}</h2>
+    <h1 class="font-oswald font-bold uppercase">{{ first_name }}</h1>
+    <h2 class="font-oswald font-regular uppercase">{{ last_name }}</h2>
   </div>
   <div class="flex md:flex-col items-center justify-center">
-    <h4 class="font-oswald font-light text-center text-xl mr-1 uppercase">
+    <h4 class="font-oswald font-light text-center mr-1 uppercase">
       {{ first_name }} {{ last_name }} / {{ first_name }} {{ last_name }}
     </h4>
-    <h4 class="font-oswald font-light text-center text-xl mr-1 uppercase">
+    <h4 class="font-oswald font-light text-center mr-1 uppercase">
       {{ first_name }} {{ last_name }} / {{ first_name }} {{ last_name }}
     </h4>
-    <h4 class="font-oswald font-light text-center text-xl uppercase">
+    <h4 class="font-oswald font-light text-center uppercase">
       {{ first_name }} {{ last_name }} / {{ first_name }} {{ last_name }}
     </h4>
   </div>
   <div>
     <img class="my-6 md:my-8" src="{{ front }}" alt="{{ front.title }}" />
     <h5
-      class="font-oswald font-light text-lg md:text-2xl tracking-widest text-center"
+      class="font-oswald font-light tracking-widest text-center"
     >
       {{ catch }}
     </h5>
   </div>
   <div class="my-12 md:my-20">
-    <h2
-      class="font-oswald font-light text-4xl md:text-5xl mb-4 md:mb-0 md:text-center"
+    <h3
+      class="font-oswald font-light mb-4 md:mb-0 md:text-center"
     >
       {{ brief }}
-    </h2>
+    </h3>
     <div class="flex md:flex-col justify-between md:items-center">
       <img
         class="hidden md:block md:my-12 w-84"
@@ -36,11 +36,11 @@
       />
       <div class="w-84 md:w-full">
         <p
-          class="font-lato font-light text-lg md:text-3xl mb-6 md:mb-10 md:text-center"
+          class="large font-lato font-light mb-6 md:mb-10 md:text-center"
         >
           {{ biography_1 }}
         </p>
-        <p class="font-lato font-light text-lg md:text-3xl md:text-center">
+        <p class="large font-lato font-light md:text-center">
           {{ biography_2 }}
         </p>
       </div>

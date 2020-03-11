@@ -1,10 +1,8 @@
-@import "base/variables";
-
 #ham {
   transition: 0.5s ease-in-out;
   &:hover {
     span {
-      background: $red;
+      background: var(--my-red);
     }
   }
   span {
@@ -14,20 +12,20 @@
 }
 
 #page-name {
-  font-family: $lato;
+  font-family: var(--font-lato);
   transition: 0.25s ease-in-out;
 }
 
 .open {
-  color: $white;
+  color: var(--my-white);
   &:hover {
-    color: $red;
+    color: var(--my-red);
     span {
-      background: $red;
+      background: var(--my-red);
     }
   }
   span {
-    background: $white;
+    background: var(--my-white);
 
     &:nth-child(1) {
       transform: rotate(45deg);
@@ -53,7 +51,7 @@
   ul {
     li {
       a {
-        font-family: $lato;
+        font-family: var(--font-lato);
       }
     }
   }
