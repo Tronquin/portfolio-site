@@ -1,1 +1,1 @@
-[{"route":"/home"},{"route":"/about"},{"route":"/blog/2020-02-11-blog","title":"2020-02-11-blog","description":"blog description","publish":false,"sourceFile":"2020-02-11-blog.md"},{"route":"/"}]
+[{"route":"/home"},{"route":"/about"},{"route":"/blog"},{"route":"/blog/building-this-portfolio","title":"building-this-portfolio","description":"blog description","publish":false,"sourceFile":"building-this-portfolio.md"},{"route":"/"}]

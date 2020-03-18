@@ -1,0 +1,25 @@
+<section>
+  <div
+    class="flex flex-col rounded justify-between items-center bg-my-red px-4"
+  >
+    <h2
+      class="font-oswald font-bold tracking-widest my-4 cursor-pointer text-my-black"
+    >
+      <a [routerLink]="['/blogs']">RECENT BLOGS</a>
+    </h2>
+    <div
+      id="blog-resume"
+      class="mb-6 px-8 py-4 rounded text-my-black bg-my-red hover:text-my-red hover:bg-my-black cursor-pointer outline-none"
+      style="transition: all 0.5s ease-in-out;"
+      *ngFor="let blog of blogs"
+    >
+      <a (click)="goToBlog(blog, blog.slug)">
+        <h4 class="font-oswald">{{ blog.title }}</h4>
+        <h6 class="font-oswald small mb-2">
+          {{ blog.timestamp }}
+        </h6>
+        <p class="font-lato font-light">{{ blog.resume }}</p>
+      </a>
+    </div>
+  </div>
+</section>

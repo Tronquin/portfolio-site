@@ -20,4 +20,8 @@ export class StoryBlokService {
   getStories(params?: object): Observable<any> {
     return from(this.sbClient.getStories(params));
   }
+
+  parseRichText(rtf: any): any {
+    return this.sbClient.richTextResolver.render(rtf);
+  }
 }
