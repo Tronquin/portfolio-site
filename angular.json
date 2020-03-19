@@ -27,7 +27,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/manifest.webmanifest",
-              "_redirects"
+              "src/_redirects"
             ],
             "styles": [
               "src/styles/tailwind/output/style.css",
