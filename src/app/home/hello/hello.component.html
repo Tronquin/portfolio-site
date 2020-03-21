@@ -17,10 +17,14 @@
     </h4>
   </div>
   <div>
-    <img
-      class="md:hidden w-96 rounded border-my-red border-8"
-      src="{{ image }}"
-      alt="clown"
-    />
+    <picture>
+      <source [srcset]="image | sbConvertImage: 'webp'" type="image/webp" />
+      <source [srcset]="image | sbConvertImage: 'jpeg'" type="image/jpeg" />
+      <img
+        class="md:hidden w-96 rounded border-my-red border-8"
+        [src]="image"
+        alt="clown"
+      />
+    </picture>
   </div>
 </section>

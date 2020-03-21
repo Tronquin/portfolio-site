@@ -23,16 +23,23 @@ import { CommonModule } from "@angular/common";
 import { LoaderService } from "./services/loader.service";
 import { HTTP_INTERCEPTORS } from "@angular/common/http";
 import { LoaderInterceptor } from "./interceptors/loader.interceptor";
+import { SbConvertImage } from "./pipe/SbConvertImage.pipe";
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, SpinnerComponent],
+  declarations: [
+    HeaderComponent,
+    FooterComponent,
+    SpinnerComponent,
+    SbConvertImage
+  ],
   imports: [FontAwesomeModule, RouterModule, CommonModule],
   exports: [
     FontAwesomeModule,
     RouterModule,
     HeaderComponent,
     FooterComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    SbConvertImage
   ],
   providers: [
     LoaderService,
