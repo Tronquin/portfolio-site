@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { ActivatedRoute, Router, ROUTES } from "@angular/router";
 import { StoryBlokService } from "../storyblok/storyblok.service";
+import { take } from "rxjs/operators";
 
 declare var ng: any;
 
@@ -31,6 +32,7 @@ export class BlogComponent implements OnInit {
   ngOnInit() {
     this.storyblokService
       .getStory(this.router.url, { version: "draft" })
+      .pipe(take(1))
       .subscribe(data => {
         this.story = data.data.story;
       });

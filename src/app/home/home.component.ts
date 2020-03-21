@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { StoryBlokService } from "../storyblok/storyblok.service";
+import { take } from "rxjs/operators";
 
 @Component({
   selector: "app-home",
@@ -23,6 +24,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.storyblokService
       .getStory("home", { version: "draft" })
+      .pipe(take(1))
       .subscribe(data => {
         this.story = data.data.story;
       });

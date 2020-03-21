@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import Client from "storyblok-js-client";
 import { from, Observable } from "rxjs";
+import { HttpClient } from "@angular/common/http";
 
 @Injectable({
   providedIn: "root"
@@ -11,7 +12,7 @@ export class StoryBlokService {
     https: true
   });
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   getStory(slug: string, params?: object): Observable<any> {
     return from(this.sbClient.getStory(slug, params));

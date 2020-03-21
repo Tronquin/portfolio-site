@@ -1,25 +1,33 @@
-<section>
-  <div
-    class="flex flex-col rounded justify-between items-center bg-my-red px-4"
-  >
-    <h2
-      class="font-oswald font-bold tracking-widest my-4 cursor-pointer text-my-black"
+<section class="my-32">
+  <div class="flex flex-col rounded justify-between items-center px-4">
+    <a
+      class="w-full flex justify-center items-center mb-24 hover:text-my-red  md:mb-16"
+      [routerLink]="['/blog/list']"
     >
-      <a [routerLink]="['/blogs']">RECENT BLOGS</a>
-    </h2>
+      <img
+        class="w-48 md:hidden"
+        src="../../../assets/svg/blog.svg"
+        alt="blog"
+      />
+      <hr class="mx-12 border-my-white rotate-90 h-40 md:hidden" />
+      <h2 class="font-oswald font-bold md:text-center">
+        RECENT <br />
+        BLOGS
+      </h2>
+    </a>
     <div
       id="blog-resume"
-      class="mb-6 px-8 py-4 rounded text-my-black bg-my-red hover:text-my-red hover:bg-my-black cursor-pointer outline-none"
+      class="rounded cursor-pointer outline-none"
       style="transition: all 0.5s ease-in-out;"
       *ngFor="let blog of blogs"
     >
       <a (click)="goToBlog(blog, blog.slug)">
-        <h4 class="font-oswald">{{ blog.title }}</h4>
-        <h6 class="font-oswald small mb-2">
-          {{ blog.timestamp }}
-        </h6>
-        <p class="font-lato font-light">{{ blog.resume }}</p>
+        <h4 class="font-oswald hover:text-my-red">{{ blog.title }}</h4>
       </a>
+      <h5 class="font-oswald small my-2">
+        {{ processTimestamp(blog.timestamp) }}
+      </h5>
+      <p class="font-lato font-light">{{ blog.resume }}</p>
     </div>
   </div>
 </section>

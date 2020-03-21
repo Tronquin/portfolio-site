@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { Router } from "@angular/router";
+import * as dayjs from "dayjs";
+import * as utc from "dayjs/plugin/utc";
 
 @Component({
   selector: "app-list",
@@ -11,10 +13,16 @@ export class BlogListComponent implements OnInit {
 
   @Input() blogs: IBlog[];
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    dayjs.extend(utc);
+  }
 
   goToBlog(blog: IBlog, slug: string) {
     this.router.navigate([`blog/${slug}`], { replaceUrl: true });
+  }
+
+  processTimestamp(timestamp: string) {
+    return dayjs.utc(timestamp).format("MMMM DD YYYY");
   }
 }
 

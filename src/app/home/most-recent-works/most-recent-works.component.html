@@ -1,43 +1,41 @@
 <section class=" mt-40 md:my-24">
-    <div class="w-full flex justify-center items-center mb-32 md:mb-16">
-      <img class="md:hidden" src="../../../assets/svg/book.svg" alt="book" />
-      <hr class="mx-16 border-my-white rotate-90 h-40 md:hidden" />
-      <h2 class="font-oswald font-bold md:text-center">
-        MOST RECENT <br />
-        WORKS
-      </h2>
-    </div>
-    <div
-      class="flex justify-center md:justify-center my-24"
-      *ngFor="let project of projects"
-    >
-      <div class="flex md:flex-col justify-between">
-        <div class="flex flex-col w-96 md:w-full md:mb-12">
-          <h4
-            class="font-oswald font-regular md:text-center"
-          >
-            {{ project.headline }}
-          </h4>
-          <p class="font-lato font-light my-2 md:text-center">
-            {{ project.description }}
-          </p>
-        </div>
-        <hr class="mx-16 border-my-white rotate-90 h-full md:hidden" />
-        <ul class="flex flex-col justify-between md:items-center">
-          <li
-            class="flex items-center md:mb-8"
-            *ngFor="let bulletpoint of project.bulletpoints"
-          >
-            <h5 class="font-oswald font-regular whitespace-no-wrap">
-              {{ bulletpoint.title }}
-            </h5>
-            <img
-              class="ml-6 w-6 md:w-10"
-              src="{{ bulletpoint.icon }}"
-              alt="{{ bulletpoint.title }}"
-            />
-          </li>
-        </ul>
+  <div class="w-full flex justify-center items-center mb-32 md:mb-16">
+    <img class="md:hidden" src="../../../assets/svg/book.svg" alt="book" />
+    <hr class="mx-16 border-my-white rotate-90 h-40 md:hidden" />
+    <h2 class="font-oswald font-bold md:text-center">
+      MOST RECENT <br />
+      WORKS
+    </h2>
+  </div>
+  <div
+    class="flex justify-center md:justify-center my-24"
+    *ngFor="let project of projects"
+  >
+    <div class="flex md:flex-col justify-between">
+      <div class="flex flex-col w-96 md:w-full md:mb-12">
+        <h4 class="font-oswald font-regular md:text-center">
+          {{ project.headline }}
+        </h4>
+        <p class="font-lato font-light my-2 md:text-center">
+          {{ project.description }}
+        </p>
       </div>
+      <hr class="mx-16 border-my-white rotate-90 h-full md:hidden" />
+      <ul class="flex flex-col justify-between md:items-center">
+        <li
+          class="flex items-center md:mb-8"
+          *ngFor="let bulletpoint of project.bulletpoints"
+        >
+          <h5 class="font-oswald font-regular whitespace-no-wrap">
+            {{ bulletpoint.title }}
+          </h5>
+          <img
+            class="ml-6 w-6 md:w-10"
+            src="{{ bulletpoint.icon }}"
+            alt="{{ bulletpoint.title }}"
+          />
+        </li>
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
