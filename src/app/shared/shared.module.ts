@@ -34,7 +34,10 @@ import { LoaderInterceptor } from "./interceptors/loader.interceptor";
     FooterComponent,
     SpinnerComponent
   ],
-  providers: []
+  providers: [
+    LoaderService,
+    { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true }
+  ]
 })
 export class SharedModule {
   constructor(library: FaIconLibrary, config: FaConfig) {

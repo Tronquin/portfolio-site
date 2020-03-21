@@ -10,14 +10,12 @@ import { environment } from "../environments/environment";
 import { StoryBlokModule } from "./storyblok/storyblok.module";
 import { DynamicModule } from "ng-dynamic-component";
 import { HttpClientModule } from "@angular/common/http";
-import { NgHttpLoaderModule } from "ng-http-loader";
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
-    NgHttpLoaderModule.forRoot(),
     AppRoutingModule,
     ScullyLibModule,
     SharedModule,

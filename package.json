@@ -34,7 +34,6 @@
     "dayjs": "^1.8.23",
     "include-media": "^1.4.9",
     "ng-dynamic-component": "^6.0.0",
-    "ng-http-loader": "^7.0.0",
     "ng-lazyload-image": "^7.0.1",
     "ng-tailwindcss": "^2.1.1",
     "rxjs": "~6.5.4",

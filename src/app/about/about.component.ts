@@ -26,7 +26,7 @@ export class AboutComponent implements OnInit {
       .getStory("about", { version: "draft" })
       .pipe(take(1))
       .subscribe(data => {
-        this.story = data.data.story;
+        this.story = data.story;
       });
   }
 }

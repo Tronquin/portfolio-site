@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
       .getStory("home", { version: "draft" })
       .pipe(take(1))
       .subscribe(data => {
-        this.story = data.data.story;
+        this.story = data.story;
       });
   }
 }
