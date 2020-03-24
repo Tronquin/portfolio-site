@@ -1,22 +1,56 @@
 <section class="mt-16">
   <div class="flex flex-col justify-center items-center my-8">
-    <h1 class="font-oswald font-bold text-center uppercase">{{first_name}} {{last_name}}</h1>
-    <h5 class="font-oswald font-light text-center uppercase tracking-widest mt-2 mb-6">{{catch}}</h5>
-    <img style="width: 48rem;" src="{{front}}" alt="{{front.title}}">
-    <h6 class="font-oswald font-light text-center tracking-widest mt-4">Starving in a socialist regime, the young adult struggles to get coin</h6>
+    <h1 class="font-oswald font-bold text-center uppercase">
+      {{ first_name }} {{ last_name }}
+    </h1>
+    <h5
+      class="font-oswald font-light text-center uppercase tracking-widest mt-2 mb-6"
+    >
+      {{ catch }}
+    </h5>
+    <h3 class="font-oswald font-light text-my-red tracking-widest text-center">
+      "tronquin"...!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    </h3>
+    <h6 class="font-oswald font-light text-center tracking-widest mt-4">
+      Starving in a socialist regime, the young adult struggles to get coin
+    </h6>
   </div>
   <div class="mx-12 my-20">
-    <h3 class="font-oswald font-bold mt-16 mb-8">{{brief}}</h3>
+    <h3 class="font-oswald font-bold mt-16 mb-8">{{ brief }}</h3>
     <div class="grid grid-cols-2 md:flex md:flex-col my-8">
       <aside id="biography">
         <p class="font-lato font-light">
-          {{biography_1}}
+          {{ biography_1 }}
         </p>
         <p class="font-lato font-light mt-8">
-          {{biography_2}}
+          {{ biography_2 }}
         </p>
       </aside>
-      <img id="biography-image" style="justify-self: center;" class="md:hidden ml-8 w-64" src="{{biography_image}}" alt="{{biography_image.title}}">
+      <picture>
+        <source
+          [srcset]="biography_image | sbConvertImage: 'webp'"
+          type="image/webp"
+        />
+        <source
+          [srcset]="biography_image | sbConvertImage: 'jpeg'"
+          type="image/jpeg"
+        />
+        <img
+          id="biography-image"
+          style="justify-self: center;"
+          class="md:hidden ml-24 w-64"
+          [src]="biography_image"
+          alt="{{ biography_image.title }}"
+        />
+      </picture>
     </div>
   </div>
 </section>

@@ -7,22 +7,50 @@
     <h1 class="font-oswald font-bold">
       {{ headline }}
     </h1>
-    <img
-      class="hidden w-56 md:block border-my-red bg-my-red border-8 rounded my-12"
-      src="../../assets/png/lambda.png"
-      alt="lambda"
-    />
+    <picture>
+      <source
+        [srcset]="lambda | sbConvertImage: 'webp'"
+        type="image/webp"
+        width="200"
+        height="200"
+      />
+      <source
+        [srcset]="lambda | sbConvertImage: 'jpeg'"
+        type="image/jpeg"
+        width="200"
+        height="200"
+      />
+      <img
+        class="hidden w-56 md:block border-my-red bg-my-red border-8 rounded my-12"
+        [src]="lambda"
+        width="200"
+        height="200"
+        alt="lambda"
+      />
+    </picture>
     <h4 class="font-lato font-light">
       {{ description }}
     </h4>
   </div>
   <div>
     <picture>
-      <source [srcset]="image | sbConvertImage: 'webp'" type="image/webp" />
-      <source [srcset]="image | sbConvertImage: 'jpeg'" type="image/jpeg" />
+      <source
+        [srcset]="image | sbConvertImage: 'webp'"
+        type="image/webp"
+        width="300"
+        height="400"
+      />
+      <source
+        [srcset]="image | sbConvertImage: 'jpeg'"
+        type="image/jpeg"
+        width="300"
+        height="400"
+      />
       <img
         class="md:hidden w-96 rounded border-my-red border-8"
         [src]="image"
+        width="300"
+        height="400"
         alt="clown"
       />
     </picture>

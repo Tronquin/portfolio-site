@@ -22,12 +22,14 @@
       *ngFor="let blog of blogs"
     >
       <a (click)="goToBlog(blog, blog.slug)">
-        <h4 class="font-oswald hover:text-my-red">{{ blog.title }}</h4>
+        <h3 class="font-oswald hover:text-my-red">
+          {{ blog.title }}
+        </h3>
       </a>
-      <h5 class="font-oswald small my-2">
+      <h5 class="font-oswald my-2 font-light md:text-right">
         {{ processTimestamp(blog.timestamp) }}
       </h5>
-      <p class="font-lato font-light">{{ blog.resume }}</p>
+      <p class="font-lato font-light md:hidden">{{ blog.resume }}</p>
     </div>
   </div>
 </section>

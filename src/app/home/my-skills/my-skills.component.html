@@ -3,12 +3,29 @@
     <div
       class="w-56 md:w-64  md:mb-16 text-center flex flex-col justify-center items-center"
     >
-      <img
-        class="border-my-red bg-my-red border-8 rounded w-40 md:w-96 p-2"
-        src="{{ portrait }}"
-        alt="cat"
-      />
-      <h4 [routerLink]="['/about']"
+      <picture>
+        <source
+          [srcset]="portrait | sbConvertImage: 'webp'"
+          type="image/webp"
+          width="200"
+          height="300"
+        />
+        <source
+          [srcset]="portrait | sbConvertImage: 'jpeg'"
+          type="image/jpeg"
+          width="200"
+          height="300"
+        />
+        <img
+          class="border-my-red bg-my-red border-8 rounded w-40 md:w-96 p-2"
+          [src]="portrait"
+          width="200"
+          height="300"
+          alt="cat"
+        />
+      </picture>
+      <h4
+        [routerLink]="['/about']"
         class="cursor-pointer font-oswald font-bold mt-4 hover:text-my-red"
       >
         {{ headline }}
@@ -16,7 +33,12 @@
       <p class="font-lato font-light my-2">
         {{ description }}
       </p>
-      <button [routerLink]="['/about']" class="font-oswald uppercase font-bold rounded text-black bg-my-red px-10 py-1 mt-4 md:text-2xl md:px-16 md:py-2">About</button>
+      <button
+        [routerLink]="['/about']"
+        class="font-oswald uppercase font-bold rounded text-black bg-my-red px-10 py-1 mt-4 md:text-2xl md:px-16 md:py-2"
+      >
+        About
+      </button>
     </div>
     <div class="ml-20 md:ml-0">
       <div class="flex justify-between items-center mb-4">
@@ -25,12 +47,42 @@
         </h4>
         <h6 class="font-lato font-light">Self-Appointed*</h6>
       </div>
-      <img class="md:hidden" src="{{ chart }}" alt="skill chart" />
-      <img
-        class="w-96 hidden md:block"
-        src="{{ chart_mobile }}"
-        alt="skill chart mobile"
-      />
+      <picture>
+        <source
+          [srcset]="chart | sbConvertImage: 'webp'"
+          type="image/webp"
+          width="800"
+          height="500"
+        />
+        <source
+          [srcset]="chart | sbConvertImage: 'jpeg'"
+          type="image/jpeg"
+          width="800"
+          height="500"
+        />
+        <img
+          class="md:hidden"
+          [src]="chart"
+          alt="skill chart"
+          width="800"
+          height="500"
+        />
+      </picture>
+      <picture>
+        <source
+          [srcset]="chart_mobile | sbConvertImage: 'webp'"
+          type="image/webp"
+        />
+        <source
+          [srcset]="chart_mobile | sbConvertImage: 'jpeg'"
+          type="image/jpeg"
+        />
+        <img
+          class="w-96 hidden md:block"
+          [src]="chart_mobile"
+          alt="skill chart mobile"
+        />
+      </picture>
     </div>
   </div>
 </section>
