@@ -5,6 +5,16 @@
 @import "./base/typography";
 @import "./media/queries";
 
+$hamburger-layer-color: white;
+$hamburger-layer-width: 40px;
+$hamburger-layer-height: 4px;
+$hamburger-layer-spacing: 10px;
+.hamburger {
+  padding: 0 !important;
+}
+
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
 body,
 html {
   font-family: var(--font-lato);

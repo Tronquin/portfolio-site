@@ -1,53 +1,11 @@
-#ham {
-  transition: 0.5s ease-in-out;
-  &:hover {
-    span {
-      background: var(--my-red);
-    }
-  }
-  span {
-    transition: 0.25s ease-in-out;
-    position: relative;
-  }
-}
-
-#page-name {
-  font-family: var(--font-lato);
-  transition: 0.25s ease-in-out;
-}
-
-.open {
-  color: var(--my-white);
-  &:hover {
-    color: var(--my-red);
-    span {
-      background: var(--my-red);
-    }
-  }
-  span {
-    background: var(--my-white);
-
-    &:nth-child(1) {
-      transform: rotate(45deg);
-      top: 0.8rem;
-      left: 0rem;
-    }
-    &:nth-child(2) {
-      width: 0%;
-      opacity: 0;
-    }
-    &:nth-child(3) {
-      transform: rotate(-45deg);
-      top: -1.2rem;
-      left: 0rem;
-    }
-  }
-}
+@import "media/queries";
 
 #menu {
-  bottom: 100%;
-  transition: bottom 0.5s ease-in-out;
-  padding-top: 4rem;
+  transform: translateY(-150%);
+  transition: transform 0.5s ease-in-out;
+  @include media("<tablet") {
+    transform: translateX(-150%);
+  }
   ul {
     li {
       a {
@@ -58,5 +16,8 @@
 }
 
 .menu-open {
-  bottom: 0 !important;
+  transform: translateY(0) !important;
+  @include media("<tablet") {
+    transform: translateX(0) !important;
+  }
 }

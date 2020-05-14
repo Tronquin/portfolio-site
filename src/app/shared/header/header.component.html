@@ -1,6 +1,4 @@
-<header
-  class="relative z-50 flex justify-between items-center my-4 md:my-8 wrapper"
->
+<header class="relative z-50 flex justify-between items-center my-8 wrapper">
   <h4
     [routerLink]="['']"
     class="font-lato font-bold z-10 cursor-pointer outline-none text-my-white hover:text-my-red"
@@ -10,24 +8,29 @@
     Tronquin.com
   </h4>
   <nav>
-    <div class="cursor-pointer" id="ham" (click)="open()">
-      <span class="w-10 h-1 bg-white mb-3 block rounded z-10"></span>
-      <span class="w-10 h-1 bg-white mb-3 block rounded z-10"></span>
-      <span class="w-10 h-1 bg-white block rounded z-10"></span>
-    </div>
+    <button
+      class="hamburger hamburger--squeeze focus:outline-none"
+      type="button"
+      id="ham"
+      (click)="open()"
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
   </nav>
 </header>
 <div class="z-20 bg-my-black fixed w-full h-full" id="menu">
-  <ul class="flex justify-center flex-col items-center h-full">
-    <li class="mb-6">
+  <ul class="flex flex-col justify-center items-center h-full">
+    <li class="mb-20 hidden">
       <a
         [routerLink]="['/projects']"
-        class="largest font-lato font-bold capitalize text-my-white hover:text-my-red hidden"
+        class="largest font-lato font-bold capitalize text-my-white hover:text-my-red"
         (click)="close()"
         >WORK</a
       >
     </li>
-    <li class="mb-6">
+    <li class="mb-20">
       <a
         [routerLink]="['/about']"
         class="largest font-lato font-bold capitalize text-my-white hover:text-my-red"
@@ -35,7 +38,7 @@
         >ABOUT</a
       >
     </li>
-    <li class="mb-6">
+    <li class="mb-20">
       <a
         [routerLink]="['/blog']"
         class="largest font-lato font-bold capitalize text-my-white hover:text-my-red"
@@ -43,7 +46,7 @@
         >BLOGS</a
       >
     </li>
-    <li class="mb-6">
+    <li class="mb-20">
       <a
         href="mailto:skorm88k@gmail.com"
         class="largest font-lato font-bold capitalize text-my-white hover:text-my-red"
@@ -51,36 +54,36 @@
         >CONTACT</a
       >
     </li>
+    <li class="mb-20">
+      <ul class="flex justify-center items-center">
+        <li class="mx-3">
+          <a href="https://github.com/Tronquin">
+            <fa-icon
+              size="lg"
+              class="large cursor-pointer text-my-white hover:text-my-red"
+              [icon]="['fab', 'github']"
+            ></fa-icon>
+          </a>
+        </li>
+        <li class="mx-3">
+          <a href="https://www.linkedin.com/in/tronquin/">
+            <fa-icon
+              size="lg"
+              class="large cursor-pointer text-my-white hover:text-my-red"
+              [icon]="['fab', 'linkedin']"
+            ></fa-icon>
+          </a>
+        </li>
+        <li class="mx-3">
+          <a href="https://www.instagram.com/tronquinwastaken/">
+            <fa-icon
+              size="lg"
+              class="large cursor-pointer text-my-white hover:text-my-red"
+              [icon]="['fab', 'instagram']"
+            ></fa-icon>
+          </a>
+        </li>
+      </ul>
+    </li>
   </ul>
-  <div class="relative" style="bottom: 3rem">
-    <ul class="flex justify-center items- h-4">
-      <li class="mx-3">
-        <a href="https://github.com/Tronquin">
-          <fa-icon
-            size="lg"
-            class="large cursor-pointer text-my-white hover:text-my-red"
-            [icon]="['fab', 'github']"
-          ></fa-icon>
-        </a>
-      </li>
-      <li class="mx-3">
-        <a href="https://www.linkedin.com/in/tronquin/">
-          <fa-icon
-            size="lg"
-            class="large cursor-pointer text-my-white hover:text-my-red"
-            [icon]="['fab', 'linkedin']"
-          ></fa-icon>
-        </a>
-      </li>
-      <li class="mx-3">
-        <a href="https://www.instagram.com/tronquinwastaken/">
-          <fa-icon
-            size="lg"
-            class="large cursor-pointer text-my-white hover:text-my-red"
-            [icon]="['fab', 'instagram']"
-          ></fa-icon>
-        </a>
-      </li>
-    </ul>
-  </div>
 </div>

@@ -1,0 +1,19 @@
+@import "media/queries";
+
+.qualities-box {
+  &:first-child {
+    @include media(">desktop") {
+      margin: 0;
+    }
+  }
+  &:nth-child(2) {
+    @include media(">desktop") {
+      margin-right: 0;
+    }
+  }
+  &:last-child {
+    @include media(">desktop") {
+      margin: 0;
+    }
+  }
+}
