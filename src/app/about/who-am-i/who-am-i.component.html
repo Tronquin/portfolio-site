@@ -1,5 +1,5 @@
 <section class="mt-16">
-  <div class="flex flex-col justify-center items-center my-8">
+  <div class="flex flex-col justify-center items-center mt-8">
     <h1 class="font-oswald font-bold text-center uppercase">
       {{ first_name }} {{ last_name }}
     </h1>
@@ -8,7 +8,9 @@
     >
       {{ catch }}
     </h5>
-    <h3 class="font-oswald font-light text-my-red tracking-widest text-center">
+    <h3
+      class="font-oswald font-light text-my-red tracking-widest text-center md:text-2xl"
+    >
       "tronquin"...!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -23,9 +25,12 @@
       Starving in a socialist regime, the young adult struggles to get coin
     </h6>
   </div>
-  <div class="mx-12 my-20">
-    <h3 class="font-oswald font-bold mt-16 mb-8">{{ brief }}</h3>
-    <div class="grid grid-cols-2 md:flex md:flex-col my-8">
+  <div class="mx-56 my-20 lg:mx-12 md:my-8">
+    <h3 class="font-oswald font-bold mb-8">{{ brief }}</h3>
+    <div
+      class="grid grid-cols-2 md:flex md:flex-col"
+      style="justify-items: center;"
+    >
       <aside id="biography">
         <p class="font-lato font-light">
           {{ biography_1 }}
@@ -45,8 +50,7 @@
         />
         <img
           id="biography-image"
-          style="justify-self: center;"
-          class="md:hidden ml-24 w-64"
+          class="md:hidden self-center w-64"
           [src]="biography_image"
           alt="{{ biography_image.title }}"
         />
