@@ -31,6 +31,6 @@ export class HeaderComponent implements OnInit {
     }
     menu.classList.remove("menu-open");
     pageName.classList.remove("open");
-    hamburger.classList.remove("open");
+    hamburger.classList.remove("is-active");
   }
 }
