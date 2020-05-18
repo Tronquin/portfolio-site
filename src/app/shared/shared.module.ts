@@ -4,18 +4,19 @@ import { RouterModule } from "@angular/router";
 import {
   FontAwesomeModule,
   FaIconLibrary,
-  FaConfig
+  FaConfig,
 } from "@fortawesome/angular-fontawesome";
 import {
   faBan,
   faChevronDown,
-  faChevronUp
+  faChevronUp,
+  faEnvelopeSquare,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
   faInstagram,
   faGithub,
-  faLinkedin
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { FooterComponent } from "./footer/footer.component";
 import { SpinnerComponent } from "./spinner/spinner.component";
@@ -30,7 +31,7 @@ import { SbConvertImage } from "./pipe/SbConvertImage.pipe";
     HeaderComponent,
     FooterComponent,
     SpinnerComponent,
-    SbConvertImage
+    SbConvertImage,
   ],
   imports: [FontAwesomeModule, RouterModule, CommonModule],
   exports: [
@@ -39,12 +40,12 @@ import { SbConvertImage } from "./pipe/SbConvertImage.pipe";
     HeaderComponent,
     FooterComponent,
     SpinnerComponent,
-    SbConvertImage
+    SbConvertImage,
   ],
   providers: [
     LoaderService,
-    { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true }
-  ]
+    { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
+  ],
 })
 export class SharedModule {
   constructor(library: FaIconLibrary, config: FaConfig) {
@@ -54,7 +55,8 @@ export class SharedModule {
       faGithub,
       faLinkedin,
       faChevronDown,
-      faChevronUp
+      faChevronUp,
+      faEnvelopeSquare
     );
   }
 }
