@@ -4,9 +4,13 @@
       class="w-full flex justify-center items-center mb-24 hover:text-my-red md:mb-16"
       [routerLink]="['/blog/list']"
     >
-      <img class="w-32 md:mr-8" src="../../../assets/svg/blog.svg" alt="blog" />
+      <img
+        class="w-40 md:w-24 md:mr-8"
+        src="../../../assets/svg/blog.svg"
+        alt="blog"
+      />
       <hr class="mx-12 border-my-white rotate-90 h-40 md:hidden" />
-      <h2 class="font-oswald font-bold md:text-center">
+      <h2 class="font-oswald font-bold md:text-4xl md:text-center">
         RECENT <br class="md:hidden" />
         BLOGS
       </h2>
@@ -18,11 +22,11 @@
       *ngFor="let blog of blogs"
     >
       <a (click)="goToBlog(blog, blog.slug)">
-        <h3 class="font-oswald hover:text-my-red">
+        <h3 class="font-oswald hover:text-my-red md:text-center">
           {{ blog.title }}
         </h3>
       </a>
-      <h5 class="font-oswald my-2 font-light md:text-right">
+      <h5 class="font-oswald my-2 font-light md:text-center">
         {{ processTimestamp(blog.timestamp) }}
       </h5>
       <p class="font-lato font-light md:hidden">{{ blog.resume }}</p>
