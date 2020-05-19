@@ -1,9 +1,13 @@
 <section class="mt-40 md:my-24">
   <div class="w-full flex justify-center items-center mb-32 md:mb-16">
-    <img class="md:hidden" src="../../../assets/svg/book.svg" alt="book" />
+    <img
+      class="md:w-24 md:mr-8"
+      src="../../../assets/svg/book.svg"
+      alt="book"
+    />
     <hr class="mx-16 border-my-white rotate-90 h-40 md:hidden" />
     <h2 class="font-oswald font-bold md:text-center">
-      RECENT <br />
+      RECENT <br class="md:hidden" />
       WORKS
     </h2>
   </div>
@@ -11,9 +15,9 @@
     class="flex justify-center md:justify-center my-24"
     *ngFor="let project of projects"
   >
-    <div class="flex md:flex-col justify-between w-full">
+    <div class="flex md:flex-col justify-center md:items-center w-full">
       <img
-        class="w-24 mr-24 md:hidden"
+        class="w-24 mr-24 md:mr-0 md:mb-8"
         [src]="project.image"
         [alt]="project.headline"
       />
