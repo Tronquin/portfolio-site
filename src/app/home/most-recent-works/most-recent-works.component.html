@@ -22,9 +22,20 @@
         [alt]="project.headline"
       />
       <div class="flex flex-col mr-24 md:mr-0 md:mb-12">
-        <h4 class="font-oswald font-regular md:text-center">
-          {{ project.headline }}
-        </h4>
+        <ng-container *ngIf="project.link.url; else elseTemplate">
+          <h4
+            ng-if
+            class="font-oswald font-regular md:text-center hover:text-my-red"
+          >
+            <a [href]="project.link.url">{{ project.headline }}</a>
+          </h4>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <h4 ng-if class="font-oswald font-regular md:text-center">
+            {{ project.headline }}
+          </h4>
+        </ng-template>
+
         <p class="font-lato font-light my-2 md:text-center">
           {{ project.description }}
         </p>
